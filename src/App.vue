@@ -1,17 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <Exercise msg="Welcome to Your Vue.js App" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import Exercise from './components/Vue01_data.vue'
+// import Exercise from './components/Vue02_declaritive_rendering.vue'
+// import Exercise from './components/Vue03_vbind.vue'
+// import Exercise from "./components/Vue04_vonce.vue";
+// import Exercise from "./components/Vue05_vshow.vue";
+// import Exercise from "./components/Vue06_vif.vue";
+import Exercise from "./components/Vue07_vfor.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Exercise,
+  },
+};
 </script>
 
 <style>
