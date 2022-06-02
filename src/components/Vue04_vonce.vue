@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style>
-@-webkit-keyframes rotate-center {
+/* @-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
     transform: rotate(0);
@@ -81,5 +81,5 @@ span {
   animation-direction: reverse;
   animation-direction: alternate;
   animation-direction: alternate-reverse;
-}
+} */
 </style>

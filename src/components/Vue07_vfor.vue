@@ -5,8 +5,7 @@
   </ul>
   <ul v-for="(i, k) in str" :key="k">
     <li v-for="(item, idx) in num" :key="idx">
-      {{ i }} * {{ idx + 1 }} = {{ i * item }}; {{ i }} * {{ idx + 1 }} =
-      {{ i * item + 1 }}; {{ i }} * {{ idx + 1 }} = {{ i * item + 2 }};
+      {{ i }} * {{ idx + 1 }} = {{ i * item }};
     </li>
   </ul>
 </template>
