@@ -74,10 +74,10 @@ export default {
     -webkit-transform: translate(0);
     transform: translate(0);
   }
-}
+} */
 
 h1 {
   -webkit-animation: vibrate-1 0.3s linear infinite both;
   animation: vibrate-1 0.3s linear infinite both;
-} */
+}
 </style>
