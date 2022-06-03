@@ -22,8 +22,8 @@
 export default {
   data() {
     return {
-      selected: "",
-      arrSelect: "C",
+      selected: "A",
+      arrSelect: ["C", "A"],
       arrObj: [
         { text: "One", value: "A" },
         { text: "Two", value: "B" },

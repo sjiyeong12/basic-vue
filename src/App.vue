@@ -1,13 +1,11 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" width="50" /><br />
   <hr />
-  <h1>Exercise</h1>
-
-  <component
-    v-for="(component, i) in arrList"
-    v-bind:is="component"
-    :key="i"
-  ></component>
+  <h1>Vue 3 Exercise</h1>
+  <div v-bind:class="classCard" v-for="(component, i) in arrList" :key="i">
+    <component v-bind:is="component"></component>
+  </div>
+  <Footer class="classFooter" msg="Footer for Your Vue.js App" />
 </template>
 
 <script>
@@ -26,7 +24,11 @@ import Exercise12 from "./components/Vue12_von_capture_self.vue";
 import Exercise13 from "./components/Vue13_checkbox.vue";
 import Exercise14 from "./components/Vue14_radio.vue";
 import Exercise15 from "./components/Vue15_select.vue";
-
+import Exercise16 from "./components/Vue16_checkbox2.vue";
+import Exercise17 from "./components/Vue17_radio_binding.vue";
+import Exercise18 from "./components/Vue18_select_binding.vue";
+import Exercise19 from "./components/Vue19_form_element_join.vue";
+import Footer from "./components/Vue_Footer.vue";
 export default {
   name: "App",
   components: {
@@ -45,6 +47,12 @@ export default {
     Exercise13,
     Exercise14,
     Exercise15,
+    Exercise16,
+    Exercise17,
+    Exercise18,
+    Exercise19,
+
+    Footer,
   },
   data() {
     return {
@@ -64,14 +72,24 @@ export default {
         Exercise13,
         Exercise14,
         Exercise15,
+        Exercise16,
+        Exercise18,
+        Exercise19,
       ],
       classCard: "card",
+      classFooter: "footer",
     };
   },
 };
 </script>
 
 <style>
+* {
+  color: white;
+}
+body {
+  background: #5ac095;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -80,14 +98,45 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-.card {
-  border: 1px solid black;
+#app > div {
+  margin-left: 10px;
+  margin-right: 10px;
+  background: rgb(76, 64, 76);
+}
+#app > div:focus,
+#app > div:hover {
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 4px 12px;
 }
 
-img {
+#app > div > h1 {
+  text-align: center;
+}
+.card {
+  padding: 10px;
+  margin-bottom: 55px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: 0.3s all ease-in-out;
+  /* width: 400px; */
+}
+h1:focus,
+h1:hover {
   -webkit-animation: jello-horizontal 0.9s both;
   animation: jello-horizontal 0.9s both;
 }
+
+.footer {
+  height: 200px;
+  margin: 0;
+  background-color: white;
+  line-height: 90px;
+  padding-left: 50px;
+  font-weight: bold;
+  clear: both;
+}
+
 @-webkit-keyframes jello-horizontal {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
@@ -147,5 +196,9 @@ img {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
+}
+select,
+option, div>input, button {
+  color: black;
 }
 </style>

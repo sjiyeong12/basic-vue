@@ -44,9 +44,9 @@ export default {
   height: 100px;
   background: #35485e;
 }
-h1 {
+/* h1 {
   color: #41b783;
-}
+} */
 /* span {
   color: whitesmoke;
 } */

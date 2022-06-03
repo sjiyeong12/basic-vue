@@ -32,20 +32,11 @@ body {
   margin: 0;
 }
 
-h1 {
+/* h1 {
   color: #41b783;
   text-shadow: #35485e;
-}
+} */
 
-.container {
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  width: 80vw;
-  margin: 0 auto;
-  min-height: 100vh;
-}
 .btn {
   flex: 1 1 auto;
   margin: 10px;
