@@ -42,7 +42,7 @@
 
       <div class="divBtn">
         <label class="title"></label>
-        <button ref="btnJoin" @click="join" class="btn-margin">가입</button>
+        <button ref="btnJoin" @click.prevent="join" class="btn-margin">가입</button>
         <button ref="btnCancel" @click="cancel" class="btn-margin">취소</button>
       </div>
     </fieldset>
