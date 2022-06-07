@@ -32,6 +32,7 @@ import Exercise20 from "./components/Vue20_form_element_join.vue";
 import Exercise21 from "./components/Vue21_o_c_ref_reactive.vue";
 import Exercise22 from "./components/Vue22_scriptsetup.vue";
 import Exercise23 from "./components/Vue23_vpre.vue";
+import Exercise24 from "./components/Vue24_computed.vue";
 import Footer from "./components/Vue_Footer.vue";
 export default {
   name: "App",
@@ -59,6 +60,7 @@ export default {
     Exercise21,
     Exercise22,
     Exercise23,
+    Exercise24,
 
     Footer,
   },
@@ -88,6 +90,7 @@ export default {
         Exercise21,
         Exercise22,
         Exercise23,
+        Exercise24,
       ],
       classCard: "card",
       classFooter: "footer",
