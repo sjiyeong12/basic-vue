@@ -7,6 +7,8 @@
 </template>
 
 <script>
+import { reactive } from '@vue/reactivity'
+import { computed } from '@vue/runtime-core'
 export default {
   //Options API
   data(){
@@ -21,10 +23,28 @@ export default {
     }
   },
   computed: {
-    small_items_c(){
-      return this.arr.filter(item =>{ item.id})
+    small_items_o(){
+      return this.arr.filter(item =>item.id<3)
     },
-  }
+  },
+
+  //Composition API
+  setup(){
+    const arr = reactive([
+        {id: 1, text: '1번 옵션 아이템'},
+        {id: 2, text: '2번 옵션 아이템'},
+        {id: 3, text: '3번 옵션 아이템'},
+        {id: 4, text: '4번 옵션 아이템'},
+        {id: 5, text: '5번 옵션 아이템'},
+    ])
+    const small_items_c = computed(()=>{
+      return arr.filter(function(item){
+        item.id<3
+      })
+    })
+    return {small_items_c}
+  },
+
 }
 </script>
 
