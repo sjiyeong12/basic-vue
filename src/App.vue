@@ -33,6 +33,8 @@ import Exercise21 from "./components/Vue21_o_c_ref_reactive.vue";
 import Exercise22 from "./components/Vue22_scriptsetup.vue";
 import Exercise23 from "./components/Vue23_vpre.vue";
 import Exercise24 from "./components/Vue24_computed.vue";
+import Exercise25 from "./components/Vue25_watct_watcheffect.vue";
+import Exercise26 from "./components/Vue26_component_create.vue";
 import Footer from "./components/Vue_Footer.vue";
 export default {
   name: "App",
@@ -61,6 +63,8 @@ export default {
     Exercise22,
     Exercise23,
     Exercise24,
+    Exercise25,
+    Exercise26,
 
     Footer,
   },
@@ -91,6 +95,8 @@ export default {
         Exercise22,
         Exercise23,
         Exercise24,
+        Exercise25,
+        Exercise26,
       ],
       classCard: "card",
       classFooter: "footer",
