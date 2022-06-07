@@ -26,8 +26,12 @@ import Exercise14 from "./components/Vue14_radio.vue";
 import Exercise15 from "./components/Vue15_select.vue";
 import Exercise16 from "./components/Vue16_checkbox2.vue";
 import Exercise17 from "./components/Vue17_radio_binding.vue";
-import Exercise18 from "./components/Vue18_select_binding.vue";
-import Exercise19 from "./components/Vue19_form_element_join.vue";
+import Exercise18 from "./components/Vue18_select_binding_o.vue";
+import Exercise19 from "./components/Vue19_select_binding_c.vue";
+import Exercise20 from "./components/Vue20_form_element_join.vue";
+import Exercise21 from "./components/Vue21_o_c_ref_reactive.vue";
+import Exercise22 from "./components/Vue22_scriptsetup.vue";
+import Exercise23 from "./components/Vue23_vpre.vue";
 import Footer from "./components/Vue_Footer.vue";
 export default {
   name: "App",
@@ -51,6 +55,10 @@ export default {
     Exercise17,
     Exercise18,
     Exercise19,
+    Exercise20,
+    Exercise21,
+    Exercise22,
+    Exercise23,
 
     Footer,
   },
@@ -73,8 +81,13 @@ export default {
         Exercise14,
         Exercise15,
         Exercise16,
+        Exercise17,
         Exercise18,
         Exercise19,
+        Exercise20,
+        Exercise21,
+        Exercise22,
+        Exercise23,
       ],
       classCard: "card",
       classFooter: "footer",
